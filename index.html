@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>wa-me-input</title>
+    <style>
+    
+@media (max-width: 1100px) {
+  body{
+    background:red;
+  }
+  #tele{
+    display:block;
+    width:98%;
+    height:150px;
+    font-size:4.4rem;
+    padding:5px;
+    border-radius:15px;
+    margin-bottom:15px;
+  }
+  #texto{
+    font-size:2.5rem;
+    display:block;
+    border-radius:15px;
+    padding:5px;
+    width:98%;
+        margin-bottom:15px;
+
+  }
+  #btn{
+    display:block;
+    font-size:2.5rem;
+    padding:20px;
+    background: #52b6eb ;
+  }
+  
+}
+
+    </style>
+  </head>
+  <body>
+    <input type="number" id="tele" placeholder="Numero telefonico">
+<textarea name="" id="texto" cols="30" rows="10" placeholder="texto a enviar.."></textarea>
+<input type="button" value="ENVIAR" id="btn">
+
+<script>
+btn.addEventListener("click",()=>{
+  window.location.href = `https://wa.me/51${tele.value}?text=${encodeURI(texto.value)}`
+})
+</script>
+  </body>
+</html>
