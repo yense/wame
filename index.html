@@ -46,7 +46,9 @@
 
 <script>
 btn.addEventListener("click",()=>{
-  window.location.href = `https://wa.me/51${tele.value.replace(/^\s+|\s+$/gm,'')}?text=${encodeURI(texto.value)}`
+  var aa = tele.value.replace(/^\s+|\s+$/gm,'')
+  console.log(aa)
+  window.location.href = `https://wa.me/51${aa}?text=${encodeURI(texto.value)}`
 })
 </script>
   </body>
